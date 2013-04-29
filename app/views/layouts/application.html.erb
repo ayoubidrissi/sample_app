@@ -5,9 +5,10 @@
 	<%= csrf_meta_tag %>
 	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
 	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
 </head>
 <body>
-<div>
+<div class="container">
   <header>
     <%= image_tag("logo.png",:alt => "simple app", :class => "round") %>
 
@@ -20,8 +21,10 @@
 
     </nav>
   </header>
-</div>
+<section class="round">
 
 <%= yield %>
+</section>
+</div>
 </body>
 </html>
