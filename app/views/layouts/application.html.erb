@@ -1,16 +1,17 @@
 <html>
 <head>
 	<title><%= title %></title>
-	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<%= csrf_meta_tag %>
-	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
-	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+<%= render 'layouts/stylesheets' %>
 </head>
 <body>
 <div class="container">
-  <header>
-    <%= image_tag("logo.png",:alt => "simple app", :class => "round") %>
+<%= render "layouts/header"%>
+<section class="round">
+
+<%= yield %>
+</section>
+
+  <footer>
 
     <nav class="round">
     	<ul>
@@ -20,11 +21,7 @@
     	</ul>
 
     </nav>
-  </header>
-<section class="round">
-
-<%= yield %>
-</section>
+  </footer>
 </div>
 </body>
 </html>
