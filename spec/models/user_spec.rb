@@ -9,6 +9,8 @@
 #  updated_at :datetime         not null
 #
 
-class User < ActiveRecord::Base
-  attr_accessible :email, :name
+require 'spec_helper'
+
+describe User do
+  pending "add some examples to (or delete) #{__FILE__}"
 end

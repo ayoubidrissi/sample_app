@@ -9,6 +9,7 @@ gem 'mysql2'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'annotate'
 end
 
 group :developpement, :test do
