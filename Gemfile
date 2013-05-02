@@ -10,6 +10,7 @@ gem 'mysql2'
 group :development, :test do
   gem 'rspec-rails'
   gem 'annotate'
+  gem 'factory_girl_rails'
 end
 
 group :developpement, :test do
